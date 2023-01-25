@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/normalize.css">
+    
+    <script src="https://kit.fontawesome.com/7ce2e51a75.js" crossorigin="anonymous"></script>
+    <script src="JS/script.js"></script>
+    
+    <title>Calculadora</title>
+    <link rel="shortcut icon" href="imagens/calculator-solid.svg" type="image/x-icon">
+
+    <!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+    <![endif]-->
+
+  </head>
+  <body onkeypress="tecla(event)">
+
+    <header style="text-align: center;" class="text-dark">
+        <h1 class="text-white">Calculadora</h1>
+    </header>
+
+    <div class="container d-flex justify-content-center">
+        <div id="calculadora" class="mt-1 rounded">
+            <div id="display" class="row shadow-lg mb-2 p-2 bg-white rounded m-3 d-flex justify-content-end align-items-center">
+                0
+            </div>
+
+            <div class="row ml-2 mr-2">
+                <button class="shadow btn btn-geral btn-dark rounded" onclick="clique(7,'numero')">
+                    7
+                </button>
+            
+                <button class="shadow btn btn-geral btn-dark rounded" onclick="clique(8,'numero')">
+                    8
+                </button>
+                    
+                <button class="shadow btn btn-geral btn-dark rounded" onclick="clique(9,'numero')">
+                    9   
+                </button>
+
+                <button class="shadow btn btn-geral btn-dark rounded" onclick="apagaultimo()">
+                    CE
+                </button>
+
+                <button class="shadow btn btn-geral btn-dark rounded" onclick="limpar()">
+                    C
+                </button>
+            </div>
+
+            <div class="row ml-2 mr-2 rounded">
+                <button class="shadow btn btn-geral btn-dark rounded" onclick="clique(4,'numero')">
+                    4
+                </button>
+            
+                <button class="shadow btn btn-geral btn-dark rounded" onclick="clique(5,'numero')">
+                    5
+                </button>
+                    
+                <button class="shadow btn btn-geral btn-dark rounded" onclick="clique(6,'numero')">
+                    6   
+                </button>
+
+                <button class="shadow btn btn-geral btn-dark rounded" onclick="clique('/','funcao')">
+                    /
+                </button>
+
+                
+                <button class="shadow btn btn-geral btn-dark rounded" onclick="clique('*','funcao')">
+                    *
+                </button>
+
+              
+            </div>
+
+            <div class="row ml-2 mr-2 rounded" style="height: 60px;">
+                <button class="shadow btn btn-geral btn-dark rounded" onclick="clique(1,'numero')">
+                    1
+                </button>
+            
+                <button class="shadow btn btn-geral btn-dark rounded" onclick="clique(2,'numero')">
+                    2
+                </button>
+                    
+                <button class="shadow btn btn-geral btn-dark rounded" onclick="clique(3,'numero')">
+                    3   
+                </button>
+
+                <button class="shadow btn btn-geral btn-dark rounded" onclick="clique('-','funcao')">
+                    -
+                </button>
+
+                <button class="shadow btn btn-geral btn-dark clear rounded" onclick="clique('+','funcao')">
+                    +
+                </button>
+
+            </div>
+
+            <div class="row ml-2 mr-2 rounded">
+                <button class="shadow btn btn-geral btn-dark enter rounded" onclick="clique(0,'numero')">
+                    0
+                </button>
+            
+                <button class="shadow btn btn-geral btn-dark rounded" onclick="clique('.','numero')">
+                    .
+                </button>
+                    
+                <button class="shadow btn btn-geral btn-dark rounded" onclick="calcular()">
+                    =   
+                </button>
+            </div> 
+               
+        </div>
+    </div>
+
+    
+    
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>

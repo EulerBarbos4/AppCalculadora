@@ -1,0 +1,38 @@
+/*===============================================*/
+/*Configurações gerais*/
+
+body{
+    background: url(../imagens/fundo.jpg) no-repeat darkgrey;
+}
+
+
+/*===============================================*/
+/*Configurações do corpo da calculadora*/
+#calculadora{
+    width: 320px;
+    height: 350px;
+    background-color: rgb(39, 56, 56);
+}
+
+
+#display{
+    height: 50px;
+}
+
+
+.btn-geral{
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    display: flexbox;
+    align-items: center;
+    justify-content: center;
+}
+
+.enter{
+    width: 110px;
+}
+
+.clear{
+    height: 110px;
+}
